@@ -1,7 +1,16 @@
+p, ul {
+  margin: .75em 0;
+}
+
+li {
+  margin: .25em 0;
+}
+
 .App {
   text-align: center;
-  background-color: #679;
-  height: 100vh;
+  background-color: #6080b0;
+  min-height: 100vh;
+  padding-bottom: 20px;
 }
 
 .App-logo {
@@ -19,6 +28,7 @@
   background-color: #111;
   height: 150px;
   color: #fff;
+  border-bottom: solid 1px #bcf;
 }
 
 /* ---- particles.js container ---- */
@@ -47,14 +57,21 @@
   font-size: 3.5em;
   position: relative;
   z-index: 1;
-  top: 25%;
+  bottom: -1.15em;
+}
+
+.App-button {
+  position: relative;
+  margin-top: 2em;
 }
 
 .App-intro {
+  position: relative;
   font-size: large;
 }
 
 .App-sample-list {
+  position: relative;
   max-width: 400px;
   width: 90vw;
   margin: 0 auto;

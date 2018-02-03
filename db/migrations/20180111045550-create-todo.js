@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       complete: {
-        defaultValue: false;
+        defaultValue: false,
         type: Sequelize.BOOLEAN
       },
       UserId: {

@@ -9,7 +9,13 @@ var config    = require('./../../config/config.js')[env];
 var db        = {};
 
 if (config.use_env_variable) {
-  var sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  let sequelize;
+  try {
+    return sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  } catch (e) {
+    console.warn(e);
+    throw e;
+  }
 } else {
   var sequelize = new Sequelize(config.database, config.username, config.password, config);
 }

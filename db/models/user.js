@@ -6,12 +6,10 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     createdAt: {
       type: DataTypes.DATE,
-      field: 'beginTime',
       defaultValue: sequelize.literal('NOW()')
     },
     updatedAt: {
       type: DataTypes.DATE,
-      field: 'updateTime',
       defaultValue: sequelize.literal('NOW()')
     }
   }, {

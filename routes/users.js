@@ -23,13 +23,13 @@ router.route("/")
     });
 
 if (process.env.NODE_ENV !== 'production') {
-    console.log('Not in production!!!');
+    // console.log('Not in production!!!');
     router.route("/new")
         .post(function (req, res) {
             models.User.create({
-                firstName: 'Jane',
-                lastName: 'Smith',
-                email: 'jane@example.com',
+                firstName: req.body.firstName,
+                lastName: req.body.lastName,
+                email: req.body.email,
                 createdAt : new Date(),
                 updatedAt : new Date(),
             }).then(function(user) {

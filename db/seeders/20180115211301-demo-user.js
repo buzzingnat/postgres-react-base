@@ -19,6 +19,7 @@ module.exports = {
       {
         firstName: 'Kelly',
         lastName: 'Jones',
+        email: 'sample@sample.com',
         createdAt : new Date(),
         updatedAt : new Date(),
       }], {});

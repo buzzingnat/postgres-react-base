@@ -13,10 +13,44 @@ const getUsers = () => {
 }
 
 const newUser = () => {
+	const firstNames = [
+	    'Fatima',
+	    'Padma',
+	    'Sofia',
+	    'Miriam',
+	    'Victoria',
+	    'Jana',
+	    'Sarah',
+	    'Ananya',
+	    'ZhangMin',
+	    'Minh'
+	];
+	const lastNames = [
+		'Li',
+		'Zhang',
+		'Chang',
+		'Nguyen',
+		'Garcia',
+		'Gonzalez',
+		'Hernandez',
+		'Smith',
+		'Smirnov',
+		'Ahmed',
+		'Khan',
+		'Chatterji',
+		'Reddy'
+	];
+	const randomWord = (array) => {
+		const number = Math.floor(Math.random()*array.length);
+		return array[number];
+	}
+
+	let fName = randomWord(firstNames);
+	console.log(fName);
 	return axios.post('api/users/new', {
-			firstName: 'Jane',
-			lastName: 'Smith',
-			email: 'jane@example.com',
+			firstName: fName,
+			lastName: randomWord(lastNames),
+			email: fName.toLowerCase() + '@sample.com',
 			createdAt : new Date(),
 			updatedAt : new Date(),
 		})
