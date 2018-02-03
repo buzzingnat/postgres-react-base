@@ -1,8 +1,8 @@
-# space-merchant
-A React browser game.
+# Postgres-React Base
+A project base, setup and ready to build upon.
 
-## The Game
-You captain a space ship. Will you become rich or go bankrupt? Will you be extorted by pirates or become a force they fear? Play and find out!
+## The Framework
+A postgres/sequelize/react project base, with sample models, seed data, and express routing to access and display data to the frontend. Rebuilding the project from the ground up slows down the flow of ideas - if in future I want to experiment with new libraries or css frameworks, this provides a quick starting point. Further information below to remind myself what this includes and some of how I put it together:
 
 ## The Code
 ### Backend:
