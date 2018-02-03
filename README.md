@@ -10,14 +10,10 @@ A postgres/sequelize/react project base, with sample models, seed data, and expr
 - Express
 - PostgreSQL
 - Sequelize
-- Grunt
-- Gulp
 
 ### Frontend:
 - React
-- SASS/SCSS
-- PureCSS
-- FontAwesome Icons
+- Reset and Normalize CSS included, use whichever suits the project
 
 ## Notes about project initialization:
 1. use `create-react-app` to build root directory
